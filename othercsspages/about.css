@@ -86,6 +86,74 @@
     font-size: 1.5em;
 }
 
+/* drop down  */
+
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -225px;
+    background: white;
+    border-top: 1px solid #eee;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.08);
+    padding: 40px 60px;
+    z-index: 2;
+    width: 100vw;
+}
+
+.has-dropdown:hover .dropdown-panel {
+    display: block;
+}
+
+.dropdown-grid {
+    border: 2px solid black;
+    margin-left: 180px;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 60px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.dropdown-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.dropdown-item h4 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.dropdown-item p {
+    font-size: 0.85em;
+    color: #666;
+    line-height: 1.4;
+}
+
+.dropdown-item:hover {
+    background-color: #fcf8f8;
+}
+
 /* media query */
 @media (max-width:767px) {
     .fa-bars {
@@ -221,6 +289,95 @@
 .story-container a {
     color: blue;
 }
+
+/* media query */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .hero {
+        height: 500px;
+    }
+
+    .hero-text {
+        padding: 0 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.4rem;
+        max-width: 100%;
+    }
+
+    .story-container {
+        width: 65%;
+        height: auto;
+    }
+}
+
+/* Small tablets / large phones — stack hero-text above hero-media */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-text {
+        flex: none;
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-media {
+        height: 350px;
+        /* fixed height needed since flex:1 won't size it once stacked */
+    }
+
+    .story-section {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .story-container {
+        width: 80%;
+        height: auto;
+    }
+
+    .story-container h3 {
+        font-size: 1.8em;
+        margin-bottom: 25px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .hero-text {
+        padding: 40px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.6em;
+    }
+
+    .hero-media {
+        height: 280px;
+    }
+
+    .story-container {
+        width: 90%;
+    }
+
+    .story-container h3 {
+        font-size: 1.4em;
+    }
+
+    .story-container p {
+        margin-bottom: 25px;
+    }
+}
+
 
 /* our teams section */
 .team-section {

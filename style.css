@@ -640,3 +640,29 @@
     color: white;
     text-decoration: underline;
 }
+
+/* carousel */
+#carouselExample {
+    width: 60%;
+    margin: auto;
+}
+
+/* usage section */
+.usage {
+    border: 2px solid rgb(248, 244, 244);
+    width: 60%;
+    height: 50vh;
+    margin: 50px auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.usage-card {
+    width: 45%;
+    background-color: #2B2929;
+}
+
+.usage-card img {
+    width: 100%;
+}

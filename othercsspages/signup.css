@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* nav bar container */
+.nav-container {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid black;
+}
+
+.logo-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-div a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+}
+
+.logo-div p {
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+.logo-menu-list {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-menu-list a {
+    font-size: 1.2em;
+    color: black;
+}
+
+.menu-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-div a {
+    font-size: 1.2em;
+    color: black;
+
+}
+
+.menu-div a:hover {
+    color: #0057E5;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#get-started {
+    font-size: 1.3em;
+    color: white;
+    background-color: #0057E5;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.fa-bars {
+    display: none;
+    font-size: 1.5em;
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -225px;
+    background: white;
+    border-top: 1px solid #eee;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.08);
+    padding: 40px 60px;
+    z-index: 2;
+    width: 100vw;
+}
+
+.has-dropdown:hover .dropdown-panel {
+    display: block;
+}
+
+.dropdown-grid {
+    border: 2px solid black;
+    margin-left: 180px;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 60px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.dropdown-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.dropdown-item h4 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.dropdown-item p {
+    font-size: 0.85em;
+    color: #666;
+    line-height: 1.4;
+}
+
+.dropdown-item:hover {
+    background-color: #fcf8f8;
+}
+
+/* hero section */
+.login-page {
+    background-color: white;
+    color: black;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.login-card {
+    border: 2px solid black;
+    width: 450px;
+}
+
+.social-buttons img {
+    width: 50px;
+}
