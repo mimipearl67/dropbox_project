@@ -447,6 +447,71 @@
     margin-bottom: 20px;
 }
 
+/* Tablets — drop to 2 columns */
+@media (max-width: 1024px) {
+
+    .team-images,
+    .directors-images {
+        width: 85%;
+        min-height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .team-container h3,
+    .directors-container h3 {
+        font-size: 2em;
+    }
+}
+
+/* Small tablets / large phones — drop to 1 column */
+@media (max-width: 768px) {
+
+    .team-section,
+    .directors-section {
+        min-height: auto;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .team-images,
+    .directors-images {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .team-container h3,
+    .directors-container h3 {
+        font-size: 1.6em;
+        margin-bottom: 30px;
+    }
+
+    .card h5 {
+        font-size: 1.3em;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+
+    .team-images,
+    .directors-images {
+        width: 92%;
+        gap: 25px;
+    }
+
+    .team-container h3,
+    .directors-container h3 {
+        font-size: 1.4em;
+    }
+
+    .card h5 {
+        font-size: 1.2em;
+        margin-bottom: 12px;
+    }
+}
+
 /* info section */
 .info-container {
     background-color: #1E1919;
@@ -490,6 +555,66 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .info {
+        width: 80%;
+    }
+
+    .info-write-up h5 {
+        font-size: 2em;
+    }
+}
+
+/* Small tablets / large phones — stack text above button */
+@media (max-width: 768px) {
+    .info-container {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .info {
+        width: 85%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .info-write-up {
+        width: 100%;
+    }
+
+    .info-write-up h5 {
+        font-size: 1.6em;
+    }
+
+    .info a {
+        padding: 15px 20px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .info-container {
+        padding: 30px 0;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .info-write-up h5 {
+        font-size: 1.3em;
+    }
+
+    .info a {
+        padding: 12px 18px;
+        font-size: 0.95em;
+    }
 }
 
 /* footer section */
