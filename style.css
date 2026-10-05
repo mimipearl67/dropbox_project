@@ -905,6 +905,7 @@
 .footer-cards a {
     color: white;
     line-height: 40px;
+    text-decoration: none;
 }
 
 .footer-cards a:hover {

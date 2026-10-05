@@ -313,7 +313,7 @@
     }
 }
 
-/* Small tablets / large phones — stack hero-text above hero-media */
+/* Small tablets  */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -332,7 +332,6 @@
 
     .hero-media {
         height: 350px;
-        /* fixed height needed since flex:1 won't size it once stacked */
     }
 
     .story-section {
@@ -353,6 +352,10 @@
 
 /* Phones */
 @media (max-width: 480px) {
+    .hero {
+        margin-top: 60px;
+    }
+
     .hero-text {
         padding: 40px 20px;
     }
